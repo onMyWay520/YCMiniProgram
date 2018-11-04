@@ -1,22 +1,22 @@
 
-<!--flex-direction属性表示布局的方向  -->
-<!--justify-content:弹性项目在主轴main-axis线上的对齐方式； 值：flex-start | flex-end | center | space-between | space-around 
-  -->
-  <!-- align-Items表示在垂直方向上的布局情况定义在父级容器中； 
-有 flex-start | flex-end | center |stretch 四个值。 -->
 <view class="section">
-  <view class="section__title">flex-direction: row</view>
-  <view class="flex-wrp" style="flex-direction:row;justify-content:center;">
+  <view class="section__title">flex-direction: colomn</view>
+  <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
     <view class="flex-item yc_green">1</view>
     <view class="flex-item yc_red">2</view>
     <view class="flex-item yc_blue">3</view>
-  </view>
+  </scroll-view>
 </view>
-<view class="section">
-  <view class="section__title">flex-direction: column</view>
-  <view class="flex-wrp" style="height: 300px;flex-direction:column;align-items:center;">
-    <view class="flex-item yc_green">1</view>
-    <view class="flex-item yc_red">2</view>
-    <view class="flex-item yc_blue">3</view>
-  </view>
-</view>
+
+ <view class="section__title">flex-direction: row</view>
+<scroll-view scroll-x class="scroll-header">
+<view id="green" class="scroll-view-item yc_green"></view>
+<view id="red" class="scroll-view-item yc_red"></view>
+<view id="blue" class="scroll-view-item yc_blue"></view>
+<view id="green" class="scroll-view-item yc_green"></view>
+<view id="red" class="scroll-view-item yc_red"></view>
+<view id="blue" class="scroll-view-item yc_blue"></view>
+<view id="green" class="scroll-view-item yc_green"></view>
+<view id="red" class="scroll-view-item yc_red"></view>
+<view id="blue" class="scroll-view-item yc_blue"></view>
+</scroll-view>

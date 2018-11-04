@@ -1,9 +1,15 @@
 @import "../lib/weui.wxss";
 
-.page-section{
-  margin-bottom: 40rpx;
+.scroll-header{
+display: flex;
+white-space: nowrap; 
 }
-.flex-wrp {display: flex;}
+.scroll-header view{
+height:128px;
+width:128px;
+border:1px solid red;
+display: inline-block;
+}
 .yc_green {background: green;width:100px; height: 100px;}
-.yc_red {background: red;width:200px; height: 100px;}
+.yc_red {background: red;width:100px; height: 100px;}
 .yc_blue {background: blue;width:100px; height: 100px;}
