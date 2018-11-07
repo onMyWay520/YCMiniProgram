@@ -1,2 +1,3 @@
 # YCMiniProgram
-微信小程序演练
+1.利用tabbar切换页面<br>
+2.轮播swipper实现<br>
