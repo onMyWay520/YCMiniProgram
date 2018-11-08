@@ -65,11 +65,7 @@ Page({
       url: "home/bannerDeatail/bannerDeatail"
     });
 
-    // wx.switchTab({
-
-    //   url: this.data.links[this.data.swiperCurrent]
-
-    // })
+  
 
   }
 })

@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/cart/cart",
     "pages/mine/mine",
-    "pages/home/home/bannerDeatail/bannerDeatail"
+    "pages/home/home/bannerDetail/bannerDetail",
+    "pages/mine/myBalance/myBalance"
   ],
   "tabBar": {
     "color": "#464a56",
@@ -33,8 +34,10 @@
     ]
   },
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#2a7fd5",
-    "navigationBarTextStyle":"white"
+    "navigationBarTitleText": "textarea",   
+    "navigationBarTextStyle":"white",
+     "enablePullDownRefresh": true
   }
 }

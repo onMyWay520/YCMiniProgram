@@ -6,13 +6,9 @@
     <block wx:for="{{imgUrls}}" wx:key="unique">
  
       <swiper-item>
- 
         <image src="{{item}}" class="img" bindtap="swipclick" mode="aspectFill"/>
- 
       </swiper-item>
- 
     </block>
- 
   </swiper>
-  
+
 </view>
