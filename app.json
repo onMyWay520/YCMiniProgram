@@ -4,7 +4,8 @@
     "pages/cart/cart",
     "pages/mine/mine",
     "pages/home/home/bannerDetail/bannerDetail",
-    "pages/mine/myBalance/myBalance"
+    "pages/mine/myBalance/myBalance",
+    "pages/mine/order/order"
   ],
   "tabBar": {
     "color": "#464a56",

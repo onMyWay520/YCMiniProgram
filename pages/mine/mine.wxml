@@ -17,27 +17,38 @@
           <view class='clear'></view> 
       </view> 
     </view> 
-    <view class="memtit" >
-       <view class='fl'>我的订单</view>
-       <view class='fr'></view>
-       <view class='clear'></view>
+     <navigator url="order/order?type=0" class='item'>
+       <view class='left'>我的订单</view>
+        <view class='right'>
+      <text>查看全部订单</text>
+      <!-- <image src='../../images/arrow-right.png'></image> -->
     </view>
+    </navigator>
     <view class="member-list">
-    	<view class='list1'bindtap="myorder" >    		
+
+    	<view class='list1'>  
+         <navigator url="order/order?type=1" hover-class="none" >  		
     			<image src="../../images/0.png" />
-    			<view>全部 </view>     		
+    			<view>待付款 </view>     
+           </navigator>		
     	</view> 
-      <view class='list1' >    		
+      <view class='list1' >  
+           <navigator url="order/order?type=2" hover-class="none" >  		  		
     			<image src="../../images/2.png" />
-    			<view>待付款 </view>     		
+    			<view>待发货 </view>   
+           </navigator>		  		
     	</view>  
       <view class='list1' >    		
+         <navigator url="order/order?type=3" hover-class="none" >  		  		
     			<image src="../../images/4.png" />
-    			<view>待发货 </view>     		
+    			<view>已发货 </view> 
+           </navigator>		    		
     	</view> 
-      <view class='list1' >    		
+      <view class='list1' >    	
+         <navigator url="order/order?type=4" hover-class="none" >  		  		
     			<image src="../../images/5.png" />
-    			<view>已完成 </view>     		
+    			<view>已完成 </view>    
+          </navigator> 		
     	</view> 
     	
     </view>
