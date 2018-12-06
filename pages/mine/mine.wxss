@@ -23,14 +23,18 @@ page{background: #F0F0F0}
   font-size: 14px;
   color: #666666;
 }
-.right{
-  /* padding-right:20rpx ; */
-  flex: 1 0 50%; 
+
+.item .right{
+  flex: 1 0 50%;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   font-size: 14px;
- color: #666666;
- justify-content: flex-end;
- align-items: center; 
+  color: #666666;
+}
+.item image{
+  width: 8px;
+  height: 15px;
 }
 .member-list{width: 100%;text-align: center;height: 65px; }
 .list1{width: 25%;float: left;font-size: 12px;color:#9d9d9d;box-sizing: border-box;padding:10px;}
@@ -57,14 +61,17 @@ page{background: #F0F0F0}
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
  .my-item{
-    width: 100%;
-    /* background: url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat 750rpx center; */
-    background-size: 16rpx auto,750rpx auto;
+    width:100%;
     margin: 5rpx 0; 
     border-bottom: 1px solid #eee;
     height: 80rpx;
     line-height: 80rpx;
     padding-left: 20rpx;
     font-size: 14px;
+    display: flex
 }
- 
+ .my-item image{
+  margin:30rpx 0 0 76%;
+  width: 8px;
+  height: 15px;
+}

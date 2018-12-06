@@ -3,10 +3,9 @@
     "pages/home/home",
     "pages/cart/cart",
     "pages/mine/mine",
-    "pages/home/home/bannerDetail/bannerDetail",
+    "pages/home/bannerDetail/bannerDetail",
     "pages/mine/myBalance/myBalance",
-    "pages/mine/order/order"
-  ],
+    "pages/mine/order/order"  ],
   "tabBar": {
     "color": "#464a56",
     "selectedColor": "#6595e9",

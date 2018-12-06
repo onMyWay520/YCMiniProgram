@@ -21,7 +21,7 @@
        <view class='left'>我的订单</view>
         <view class='right'>
       <text>查看全部订单</text>
-      <!-- <image src='../../images/arrow-right.png'></image> -->
+      <image  src='../../images/arrow-right.png'></image>
     </view>
     </navigator>
     <view class="member-list">
@@ -50,33 +50,20 @@
     			<view>已完成 </view>    
           </navigator> 		
     	</view> 
-    	
     </view>
-    <!-- <view class='H10'></view>
-    <view class="mem-menu">
-    	<view class='menu1' bindtap='collect'>
-    		
-    			<image src="../../images/6.png" />
-    			<view>我的收藏 </view>
-    	
-    	</view> 
-      <view class='menu1' bindtap="address">    		
-    			<image src="../../images/7.png" />
-    			<view>我的地址 </view>    	
-    	</view>   
-      <view class='menu1' bindtap='set'> 
-    			<image src="../../images/9.png" />
-    			<view>关于 </view> 
-    	</view>   	 
-    	<view class='clear'></view> -->
-    <!-- </view>  -->
      <view class="my-item">
     <navigator url= "myBalance/myBalance" hover-class="navigator-hover">我的余额</navigator>
+    <image  src='../../images/arrow-right.png'></image>
+
   </view>
   <view class="my-item">
     <navigator url= "myBalance/myBalance" hover-class="navigator-hover">收货地址</navigator>
+        <image  src='../../images/arrow-right.png'></image>
+
   </view>
   <view class="my-item">
     <navigator url= "myBalance/myBalance" hover-class="navigator-hover">联系客服</navigator>
+        <image  src='../../images/arrow-right.png'></image>
+
   </view>
 </view>

@@ -1,6 +1,5 @@
-
+<import src="../utils/HomeGoodsCell/HomeGoodsCell.wxml"/> 
 <view class="swiper-container">
- 
  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-color="{{indicatorCo}}" indicator-active-color="{{indicatoraAC}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
  
     <block wx:for="{{imgUrls}}" wx:key="unique">
@@ -10,5 +9,5 @@
       </swiper-item>
     </block>
   </swiper>
-
 </view>
+ <template is="HomeGoodsCell" data="{{HomePArr}}"/>
