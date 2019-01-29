@@ -17,9 +17,8 @@ Page({
 
       'http://life.southmoney.com/tuwen/UploadFiles_6871/201805/20180531142617331.jpg',
 
-      'http://img04.tooopen.com/images/20130701/tooopen_20083555.jpg',
-
-      'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg'
+      'https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a41eb338dd33c895a62bcb3bb72e47c2/5fdf8db1cb134954a2192ccb524e9258d1094a1e.jpg',
+'https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a4b3d7085dee3d6d2293d48b252b5910/0e2442a7d933c89524cd5cd4d51373f0830200ea.jpg'
 
     ],
 

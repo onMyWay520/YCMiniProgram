@@ -5,8 +5,8 @@
       <view class='coll-product'>
       
         <view class='coll-product-l' bindtap='detail' data-id='{{item.goods_id}}'>
-        <image src="{{item['imgs']['url']}}" /></view>
-        <view class='coll-product-r'>
+        <image  src="{{item['imgs']['url']}}"  /></view>
+         <view class='coll-product-r'>
           <view class='coll-product-r-t'>{{item.goods_name}}</view>
           <view class='coll-product-r-m'>{{item.description}}</view>
           <view class='coll-product-r-m'>已拼1.3万件</view>

@@ -16,7 +16,7 @@
       <text class='{{tabIndex==4?"active":""}}'>已完成</text>
     </view>
   </view>
-  <scroll-view scroll-y class='list'>
+  <!-- <scroll-view scroll-y class='list'>
       <view class='item' wx:if="{{!isEdit}}" wx:for="{{list}}">
       <navigator class='content' hover-class="none" url="/pages/orderDetails/index?id={{item._id}}">
         <image src='{{item.goods[0].img}}'></image>
@@ -29,5 +29,14 @@
         </view>
       </navigator>
     </view>
-  </scroll-view>
+  </scroll-view> -->
+
+<!--垂直滚动，这里必须设置高度-->
+<scroll-view scroll-y="true" style="height: 500px">
+    <view style="background: red; width: 375px; height: 100px" ></view>
+    <view style="background: green; width: 375px; height: 100px"></view>
+    <view style="background: blue; width: 375px; height: 100px"></view>
+    <view style="background: yellow; width: 375px; height: 100px"></view>
+</scroll-view>
+
 </view>

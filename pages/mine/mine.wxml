@@ -58,12 +58,11 @@
   </view>
   <view class="my-item">
     <navigator url= "myBalance/myBalance" hover-class="navigator-hover">收货地址</navigator>
-        <image  src='../../images/arrow-right.png'></image>
+     <image  src='../../images/arrow-right.png'></image>
 
   </view>
   <view class="my-item">
     <navigator url= "myBalance/myBalance" hover-class="navigator-hover">联系客服</navigator>
-        <image  src='../../images/arrow-right.png'></image>
-
+   <image  src='../../images/arrow-right.png'></image>
   </view>
 </view>
