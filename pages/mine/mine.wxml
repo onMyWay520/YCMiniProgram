@@ -17,7 +17,7 @@
           <view class='clear'></view> 
       </view> 
     </view> 
-     <navigator url="order/order?type=0" class='item'>
+     <navigator url="order/order?index=0" class='item'>
        <view class='left'>我的订单</view>
         <view class='right'>
       <text>查看全部订单</text>
@@ -27,25 +27,25 @@
     <view class="member-list">
 
     	<view class='list1'>  
-         <navigator url="order/order?type=1" hover-class="none" >  		
+         <navigator url="order/order?index=1" hover-class="none" >  		
     			<image src="../../images/0.png" />
     			<view>待付款 </view>     
            </navigator>		
     	</view> 
       <view class='list1' >  
-           <navigator url="order/order?type=2" hover-class="none" >  		  		
+           <navigator url="order/order?index=2" hover-class="none" >  		  		
     			<image src="../../images/2.png" />
     			<view>待发货 </view>   
            </navigator>		  		
     	</view>  
       <view class='list1' >    		
-         <navigator url="order/order?type=3" hover-class="none" >  		  		
+         <navigator url="order/order?index=3" hover-class="none" >  		  		
     			<image src="../../images/4.png" />
     			<view>已发货 </view> 
            </navigator>		    		
     	</view> 
       <view class='list1' >    	
-         <navigator url="order/order?type=4" hover-class="none" >  		  		
+         <navigator url="order/order?index=4" hover-class="none" >  		  		
     			<image src="../../images/5.png" />
     			<view>已完成 </view>    
           </navigator> 		

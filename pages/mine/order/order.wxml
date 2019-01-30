@@ -1,42 +1,21 @@
-<view class='main'>
-  <view class='tab'>
-   <view bindtap='tabFun' data-index="{{0}}">
-      <text class='{{tabIndex==0?"active":""}}'>全部</text>
+
+<view class="stv-container">
+  <view class="tab-bar">
+    <view wx:for="{{tabs}}" wx:key="unique" data-index=
+    "{{index}}" bindtap="handlerTabTap" class="tab {{activeTab==index?'tab-active':''}}" style="width: {{stv.windowWidth/tabs.length}}px">
+      <text>{{item}}</text>
     </view>
-    <view bindtap='tabFun' data-index="{{1}}">
-      <text class='{{tabIndex==1?"active":""}}'>待付款</text>
-    </view>
-    <view bindtap='tabFun' data-index="2">
-      <text class='{{tabIndex==2?"active":""}}'>待发货</text>
-    </view>
-    <view bindtap='tabFun' data-index="3">
-      <text class='{{tabIndex==3?"active":""}}'>已发货</text>
-    </view>
-    <view bindtap='tabFun' data-index="4">
-      <text class='{{tabIndex==4?"active":""}}'>已完成</text>
+    <view style="width: {{stv.lineWidth}}px; left: {{stv.offset/tabs.length}}px" class="under-line {{!stv.tStart? 'withAnimate': ''}}"></view>
+  </view>
+  <view class="scroll-view">
+    <view bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd"  class="scroll-view-wrapper {{!stv.tStart? 'withAnimate': ''}}" style="left: -{{stv.offset}}px">
+      <view style="width: {{stv.windowWidth}}px;" wx:for="{{tabs}}" wx:key="unique" class="one-scene">
+        <scroll-view style="height:100%" scroll-y>
+          <!-- <view wx:for="6" wx:key="unique" > -->
+            <text>这是第{{index+1}}个页面</text>
+          <!-- </view> -->
+        </scroll-view>
+      </view>
     </view>
   </view>
-  <!-- <scroll-view scroll-y class='list'>
-      <view class='item' wx:if="{{!isEdit}}" wx:for="{{list}}">
-      <navigator class='content' hover-class="none" url="/pages/orderDetails/index?id={{item._id}}">
-        <image src='{{item.goods[0].img}}'></image>
-        <view class='text'>
-          <view class='title'>共{{item.goods.length}}件商品</view>
-          <view class='spec'>{{item.creat_date}}</view>
-          <view class='price'>
-            <text>¥{{item.totalPrice}}</text>
-          </view>
-        </view>
-      </navigator>
-    </view>
-  </scroll-view> -->
-
-<!--垂直滚动，这里必须设置高度-->
-<scroll-view scroll-y="true" style="height: 500px">
-    <view style="background: red; width: 375px; height: 100px" ></view>
-    <view style="background: green; width: 375px; height: 100px"></view>
-    <view style="background: blue; width: 375px; height: 100px"></view>
-    <view style="background: yellow; width: 375px; height: 100px"></view>
-</scroll-view>
-
 </view>
