@@ -13,7 +13,6 @@
             <button wx:else open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
           </view>
 
-          <!-- <view class='fr member-infor-m' bindtap='mobile'>绑定手机</view>  -->
           <view class='clear'></view> 
       </view> 
     </view> 
@@ -52,7 +51,9 @@
     	</view> 
     </view>
      <view class="my-item">
-    <navigator url= "myBalance/myBalance" hover-class="navigator-hover">我的余额</navigator>
+    <navigator url= "myBalance/myBalance" hover-class="navigator-hover">    		
+    	<view>我的余额 </view>   
+</navigator>
     <image  src='../../images/arrow-right.png'></image>
 
   </view>

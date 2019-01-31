@@ -9,17 +9,24 @@ Page({
       offset: 0,
       tStart: false
     },
-    activeTab: 0
+    activeTab: 0,
+    ppyIndex:0
   },
   onLoad: function (options) {
+    // 监听页面加载
     try {
+      console.log(options);
+
       let { tabs } = this.data;
       var res = wx.getSystemInfoSync()
       this.windowWidth = res.windowWidth;
       this.data.stv.lineWidth = this.windowWidth / this.data.tabs.length;
       this.data.stv.windowWidth = res.windowWidth;
+      
       this.setData({ stv: this.data.stv })
       this.tabsCount = tabs.length;
+      this._updateSelectedPage(options.index)
+      console.log(offset);
     } catch (e) {
     }
   },
@@ -92,7 +99,7 @@ Page({
     stv.offset = stv.windowWidth * activeTab;
     this.setData({ stv: this.data.stv })
   },
-  handlerTabTap(e) {
+  handlerTabTap(e) { //点击事件
     this._updateSelectedPage(e.currentTarget.dataset.index);
   }
 })
